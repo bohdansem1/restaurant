@@ -1,0 +1,177 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* open-sans-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v35-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-500 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/open-sans-v35-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-600 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/open-sans-v35-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-700 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/open-sans-v35-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  html {
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+/* body{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-decoration: none;
+} */
+img{
+    max-width: 100%;
+    height: auto;
+}
+.wrapper {
+    margin: 0 166px;
+}
+
+.header{
+    height: 100vh;
+    background-image: url(../img/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__wrapper {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.header__link{
+    margin-bottom: 10px;
+    color: #FFF;
+    font-size: 14px;
+    font-family: Open Sans;
+    font-weight: 700;
+    margin-right: 25px;
+    text-decoration: none;
+    transition: 0.15s linear;
+}
+.header__link:hover,.header__link:active{
+    color: #a44a00;
+}
+.header__phone-number:hover{
+    color: #a44a00;
+}
+
+.header__list{
+    display: flex;
+}
+.header__logo{
+
+}
+.header__line {
+    width: 1px;
+    height: 51px;
+    background-color: #fff;
+}
+
+.header__phone-number{
+    color: #FFF;
+    font-size: 18px;
+    font-family: Open Sans;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.15s linear;
+
+}
+.header__call-descr{
+    color: #FFF;
+    font-size: 14px;
+    font-family: Open Sans;
+    font-weight: 400;
+    max-width: 154px;
+}
+
+.header__order-btn{
+    color: #FFF;
+    font-size: 14px;
+    font-family: Open Sans;
+    font-weight: 700;
+    background: #FF7400;
+    padding: 14px 18px;
+    text-decoration: none;
+    transition: 0.15s linear;
+}
+.header__order-btn:hover{
+    background: #a44a00;
+}
