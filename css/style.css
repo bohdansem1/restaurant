@@ -105,12 +105,17 @@ img{
 }
 
 .header{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
-    background-image: url(../img/main-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
+    transition: 0.2s linear;
+    padding-bottom: 10px;
+    z-index: 5;
+}
+.header_active{
+    background-color: #000000;
+    opacity: .95;
 }
 .header__burger{
     display: none;
@@ -121,10 +126,11 @@ img{
 .burger__line {
     display: block;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background-color: #D67E35;
     position: absolute;
     left: 0;
+    border-radius: 3px;
 }
 .burger__line_first{
     top: 2px;
@@ -138,7 +144,7 @@ img{
 }
 
 .header__wrapper {
-    padding-top: 50px;
+    padding-top: 20px;
     display: flex;
     flex-wrap:wrap;
     align-items: center;
@@ -169,6 +175,11 @@ img{
     margin-right: 150px;
     margin-left: 165px;
 
+}
+.header__logo-pic-mobile{
+    width: 45px;
+    height: 31px;
+    display: none;
 }
 .header__line {
     width: 1px;
@@ -208,20 +219,22 @@ img{
 }
 
 .welcome{
-    display: block;
     width: 100%;
-    height: 200px;
-    position: relative;
-    margin-top: 222px;
+    height: 100vh;
+    background-image: url(../img/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
     
     
 }
 .wrapper__welcome{
     display: block;
-    margin-left: 175px;
     text-align: center;
     position: absolute;
-    left: 0;
+    top: 350px;
+    left: 570px;
+   
 
 }
 .welcome__text-first{
@@ -882,6 +895,15 @@ img{
         margin-left: 10px;
         left: 0;
         position: relative;
+
+
+    }
+    .header__logo-pic{
+        display: none;
+    }
+    .header__logo-pic-mobile{
+        display: block;
+        margin-left: 5px;
     }
     .header__cart, .header__call, .header__line-number, .header__line, .header__button{
         display: none;
@@ -948,8 +970,10 @@ img{
     }
     
     .wrapper__welcome{
-        position: relative;
-        margin-left: 0;
+        position: absolute;
+        left: 45px;
+        
+    
     }
     .welcome__order-btn{
         margin-top: 50px;
@@ -1088,6 +1112,6 @@ img{
         margin-bottom: 0;
     }
     .header__burger {
-        margin-right: 10px;
+        margin-right: 15px;
     }
 }   
