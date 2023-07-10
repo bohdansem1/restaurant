@@ -220,7 +220,6 @@ img{
 
 .welcome{
     width: 100%;
-    height: 100vh;
     background-image: url(../img/main-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -231,9 +230,12 @@ img{
 .wrapper__welcome{
     display: block;
     text-align: center;
-    position: absolute;
+    /* position: absolute;
     top: 350px;
-    left: 570px;
+    left: 570px; */
+    padding-right: 480px;
+    padding-top: 300px;
+
    
 
 }
@@ -968,10 +970,16 @@ img{
     .welcome__text-second {
         font-size: 40px;    
     }
-    
+
+
     .wrapper__welcome{
+        display: block;
+        text-align: center;
         position: absolute;
+        top: 350px;
         left: 45px;
+        padding-right: 0px;
+        padding-top: 0px;
         
     
     }
@@ -1114,4 +1122,5 @@ img{
     .header__burger {
         margin-right: 15px;
     }
+    
 }   
